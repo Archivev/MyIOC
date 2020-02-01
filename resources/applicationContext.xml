@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+    <bean id="people" class="com.Archiver.entity.People" >
+        <property name="name" value="张三"/>
+        <property name="sex" value="男"/>
+    </bean>
+    <bean id="user" class="com.Archiver.entity.User">
+        <property name="people" ref="people"/>
+        <property name="userId" value="11"/>
+    </bean>
+    <bean id="man" class="com.Archiver.entity.Man">
+        <property name="age" value="123"/>
+        <property name="people" ref="people"/>
+    </bean>
+</beans>
